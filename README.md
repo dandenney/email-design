@@ -1,5 +1,4 @@
 # Email Design
-============
 
 Info and resources for creating HTML emails.
 
