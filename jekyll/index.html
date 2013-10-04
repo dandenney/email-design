@@ -1,0 +1,101 @@
+---
+layout: mandrill
+title: Code School Emails
+color-background: "bgcolor='#f6f5ed'"
+---
+
+<style>
+  
+  .mandrill,
+  .mailchimp,
+  .welcome,
+  .hallpass,
+  .noHeader {
+    background-image: url('/images/mandrill.gif');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: auto 60px;
+  }
+
+  .mailchimp {
+    background-image: url('/images/freddie.png');
+  }
+
+  .retired li {
+    opacity: 0.5
+  }
+
+  .retired li:hover {
+    opacity: 1;
+  }
+
+</style>
+
+<!-- // BEGIN CONTENT WRAPPER  -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="content--wrapper" style="padding-bottom: 20px; padding-top: 20px;">
+    <tr>
+      <td align="center" valign="top">
+
+        <!-- // SECTION BEGIN -->
+          <table border="0" cellpadding="0" cellspacing="0" class="flex--size" style="color: #636365; font-family: 'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; width: 90%;">
+            
+            <tr>
+              <td colspan="3">
+                <h1 style="color: #3f4944; font-size: 24px;">{{ page.title }}</h1>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="vertical-align: top;">
+              
+                <h2 style="color: #3f4944; font-size: 20px;">Active</h1>
+                <ul style="margin: 0; padding: 0;">
+                  {% for post in site.posts reversed %}
+                  {% if post.status != "retired" %}
+                  <li style="background-color: #ffffff; border-bottom: 2px solid #c9c7bc; border-left: 1px solid #d8d7cf; border-right: 1px solid #d8d7cf; border-top: 1px solid #e7e6e2; border-radius: 2px; list-style: none; margin: 0 0 15px 0; padding: 15px;" class="{{ post.layout }}">
+                      <h4 style="font-size: 18px; margin-bottom: 0; margin-top: 0;">{{ post.title }}</h4>
+                      {{ post.layout }} - 
+                      <a href="{{ post.url }}" style="color: #228b9b;">View</a> 
+                      {% if post.docs %}
+                         - <a href="{{ post.docs }}" style="color: #228b9b;">Docs</a>
+                      {% endif %}
+                  </li>
+                  {% endif %}
+                  {% endfor %}
+                </ul>
+
+              </td>
+
+              <td width="2.5%">
+                &nbsp;
+              </td>
+
+              <td style="vertical-align: top;">
+                
+                <h2 style="color: #3f4944; font-size: 20px;">Retired</h1>
+                
+                <ul style="margin: 0; padding: 0;" class="retired">
+                  {% for post in site.posts reversed %}
+                  {% if post.status == "retired" %}
+                  <li style="background: #fbfaf6; border-bottom: 2px solid #c9c7bc; border-left: 1px solid #d8d7cf; border-right: 1px solid #d8d7cf; border-top: 1px solid #e7e6e2; border-radius: 2px; list-style: none; margin: 0 0 15px 0; padding: 15px;">
+                      <h4 style="font-size: 18px; margin-bottom: 0; margin-top: 0;">{{ post.title }}</h4>
+                      {{ post.layout }} - 
+                      <a href="{{ post.url }}" style="color: #228b9b; font-weight: bold;">View</a> 
+                      {% if post.docs %}
+                         - <a href="{{ post.docs }}" style="color: #228b9b; font-weight: bold;">Docs</a>
+                      {% endif %}
+                  </li>
+                  {% endif %}
+                  {% endfor %}
+                </ul>
+
+              </td>
+            </tr>
+          </table>               
+        <!-- // SECTION END -->
+
+      </td>
+    </tr>  
+  </table>
+
+<!-- // END CONTENT WRAPPER  -->

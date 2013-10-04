@@ -1,0 +1,168 @@
+!!!
+%html
+
+  %head
+    %meta(http-equiv="X-UA-Compatible" content="text/html") 
+    %meta(charset="utf-8")
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    // You'll want to use a variable from your email service
+    %title Percolating
+
+    :css
+      @media only screen and (max-width: 600px){
+          
+          .flex--size {
+            width: 100% !important;
+          }
+      
+          .flex--content {
+            margin: 0 auto !important;
+            width: 92% !important;
+          }
+
+          .flex--content img {
+            max-width: 100% !important;
+          }
+
+          .flex--stack {
+            display: block !important;
+            width: 100% !important;
+          }
+
+          .stacked-space {
+            margin-top: 30px !important;
+          }
+
+          h1 {
+            font-size: 32px !important;
+          }
+
+          h2 {
+            font-size: 24px !important;
+          }
+
+          .button {
+            font-size: 18px !important;
+            line-height: 2.5 !important;
+            width: 99% !important;
+          }
+
+          .button--thin {
+            font-size: 14px !important;
+            line-height: 2 !important;
+            width: 99% !important;
+          }
+
+          .hero-title {
+              width: 160px !important;
+          }
+
+          .hero-img {
+              display: inline-block !important;
+              width: 120px !important;
+          }
+
+          .hero-h1 {
+            font-size: 36px !important;
+            text-align: center !important;
+            width: 280px !important;
+          }
+
+          .hero-span {
+            font-size: 84px !important;
+            text-align: center !important;
+          }
+
+          .hero-img {
+            width: 50% !important;
+          }
+
+          .override--height {
+            height: 0 !important;
+          }
+
+          .center {
+            text-align: center !important;
+          }
+
+          .reduceSize--16 {
+            font-size: 16px !important;
+          }
+
+          .reduceSize--14 {
+            font-size: 14px !important;
+          }
+
+          .reduceImg--60 {
+            width: 60px !important;
+          }
+
+          .no-link {
+
+          }
+
+
+      }
+
+  %body{ :leftmargin => "0", :marginwidth => "0", :marginheight => "0", :offset => "0", :topmargin => "0", :style => "padding: 0;" }
+    %center
+
+      // Primary table that runs full width and controls layout
+      // Every table requires setting the border, cellpadding, spacing and fonts if it is going to contain text
+      %table.flex--size{ :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "color: #525254; font-family: AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4;", :width => "100%" }
+
+
+        // Header Row
+        %tr
+          %td
+
+            %table{ :bgcolor => "#615e65", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "color: #d8dbc6; font-family: AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4;", :width => "100%" }
+
+              %tr
+                %td
+
+                  %table.flex--content{ :align => "center", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "color: #d8dbc6; font-family: AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4;", :width => "580" }
+
+                    // The safest padding I've found
+                    %tr
+                      %td{ :height => "15" }
+
+                    %tr
+                      %td.reduceSize--16{ :align => "center", :style => "font-size: 20px; text-transform: uppercase;"}
+                        \~ JustIn Time Presses, Inc. ~
+
+                    %tr
+                      %td{ :height => "15" }
+
+        
+        // Footer Row
+        %tr
+          %td
+
+            %table{ :bgcolor => "#615e65", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "color: #525254; font-family: AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4;", :width => "100%" }
+              %tr
+                %td
+
+                  %table.flex--content{ :align => "center", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "color: #f3f4e9; font-family: AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4;", :width => "580" }
+                    
+                    %tr
+                      %td{:height => "15"}
+
+                    %tr
+                      %td
+
+                        %span.no-link
+                          1234 Address Street
+                          %br
+                          Cityname, ST 12345
+
+                    %tr
+                      %td{:height => "15"}
+
+                    %tr
+                      %td
+                        %a{:href => "#", :style => "color: #f3f4e9;"} Unsubscribe
+
+                    %tr
+                      %td{:height => "15"}
+

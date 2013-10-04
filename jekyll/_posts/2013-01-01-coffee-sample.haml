@@ -1,0 +1,171 @@
+---
+layout: main
+title: Styleguide
+typeset: "font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;; font-size: 16px; line-height: 1.4;"
+color-background: "bgcolor='#f3f4e9'"
+color-base: "color: #6c7e76;"
+color-link: "color: #228b9b;"
+color-title: "color: #615e65;"
+table-base: ":border => '0', :cellpadding => '0', :cellspacing => '0'"
+---
+
+// Content Row
+%tr
+  %td
+
+    %table{ :bgcolor => "#e98e62", {{ page.table-base }}, :style => "color: #525254; {{ page.typeset }}", :width => "100%" }
+      %tr
+        %td
+
+          %table.flex--content{ :align => "center", {{ page.table-base }}, :style => "color: #f3f4e9; {{ page.typeset }}", :width => "580" }
+
+            %tr
+              %td{ :height => "15" }
+
+            %tr
+              %td{ :align => "center" }
+
+                %table.flex--stack{ :align => "left", {{ page.table-base }}, :style => " {{ page.color-base }} {{ page.typeset }}", :width => "300" }
+
+                  %tr
+                    %td{ :height => "20" }
+
+                  %tr
+                    %td
+
+                      %h1.hero-h1{:style => "color: #f3f4e9; font-size: 50px; margin: 0; padding: 0; text-align: left; text-shadow: 0 4px 0 #e78353;" }
+                        The Mezzell
+
+                  %tr
+                    %td.hero-span{ :style => "color: #f3f4e9; font-size: 120px; line-height: 1; margin: 0; padding: 0; text-align: left; text-shadow: 0 4px 0 #e78353;" }
+                      9000
+
+
+                %table.flex--stack{ :align => "right", {{ page.table-base }}, :style => "color: #6c7e76; {{ page.typeset }}", :width => "280" }
+
+                  %tr
+                    %td.center{ :width => "280" }
+
+                      %img.hero-img{ :align => "center", :src => "https://gallery.mailchimp.com/040435af75d83823cc94edc9b/images/frenchpress_justin_mezzell.gif", :alt => "Frenchpress Animation by Justin Mezzell", :style => "display: block;", :width => "100%"}
+
+            %tr
+              %td{ :height => "30" }
+
+            %tr
+              %td{ :align => "left", :style => "font-size: 18px;" }
+
+                Order now and get the first Justin Time French Press that keeps pressing in a loop. Just <strong>$999.99</strong>, plus shipping and handling.
+
+            %tr
+              %td{ :height => "30" }
+
+            %tr
+              %td
+                // Button
+                %table{ :align => "center", {{ page.table-base }}, :style => "color: #6c7e76; font-family: AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px;", :width => "240" }
+                  %tr
+                    %td{:bgcolor => "#5f4955", :style => "border-bottom: 4px solid #55424c; border-left: 2px solid #55424c; border-right: 2px solid #55424c; border-radius: 3px;"}
+                      %a.button{:href => "#", :style => "color: #ffffff; display: block; font-size: 20px; font-weight: bold; line-height: 2.5; padding-top: 3px; text-align: center; text-decoration: none; text-shadow: 0 1px 0 #5f4955; text-transform: uppercase;"} Order Now
+
+            %tr
+              %td{ :height => "45" }
+
+          %table{ :bgcolor => "#f3f4e9", {{ page.table-base }}, :style => "color: #525254; {{ page.typeset }}", :width => "100%" }
+            %tr
+              %td
+                
+                %table.flex--content{ :align => "center", {{ page.table-base }}, :style => "color: #6c7e76; {{ page.typeset }}", :width => "580" }
+
+                  %tr
+                    %td{ :height => "30" }
+
+                  %tr
+                    %td
+
+                      %h3{:style => "{{ page.color-title }} font-size: 24px; margin: 0; padding: 0;" }
+                        Last chance to order these Mezzell models!
+                  
+                  %tr
+                    %td{ :height => "30" }
+
+                  // Featured items
+                  %tr
+                    %td
+
+                      %table.flex--stack{ :align => "left", {{ page.table-base }}, :style => "color: #6c7e76; {{ page.typeset }}", :width => "260" }
+
+                        %tr
+                          %td{ :style => "text-align: center;"}
+
+                            %img.reduceImg--60{ :align => "center", :src => "https://gallery.mailchimp.com/040435af75d83823cc94edc9b/images/frenchpress_silver.png", :alt => "Silver Frenchpress by Justin Mezzell", :style => "display: inline-block;", :width => "100"}
+
+                        %tr
+                          %td{:height => "15"}
+
+                        %tr
+                          %td
+
+                            %h4{:style => "{{ page.color-title }} font-size: 20px; margin: 0; padding: 0;" }
+                              The Mezzell 8000
+                            
+                            The Mezzell 8000 is requires manual pressing and holds 32oz.
+
+                        %tr
+                          %td{:height => "15"}
+
+                        %tr
+                          %td
+                            // Button
+                            %table{ :align => "center", {{ page.table-base }}, :style => "color: #6c7e76; font-family: AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px;", :width => "100%" }
+                              %tr
+                                %td{:bgcolor => "#5f4955", :style => "border-bottom: 4px solid #55424c; border-left: 2px solid #55424c; border-right: 2px solid #55424c; border-radius: 3px;"}
+                                  %a.button--thin{:href => "#", :style => "color: #ffffff; display: block; font-size: 16px; font-weight: bold; line-height: 2; padding-top: 8px; text-align: center; text-decoration: none; text-shadow: 0 1px 0 #5f4955; text-transform: uppercase;"} Order Now
+
+                      %table.flex--stack.stacked-space{ :align => "right", {{ page.table-base }}, :style => "color: #6c7e76; {{ page.typeset }}", :width => "260" }
+
+                        %tr
+                          %td
+
+                            %table{ {{ page.table-base }}, :style => "color: #6c7e76; {{ page.typeset }}" }
+
+                              %tr
+                                %td{ :style => "text-align: center;"}
+
+                                  %img.reduceImg--60{ :align => "center", :src => "https://gallery.mailchimp.com/040435af75d83823cc94edc9b/images/frenchpress_silver.png", :alt => "Silver Frenchpress by Justin Mezzell", :style => "display: inline-block;", :width => "100"}
+
+                              %tr
+                                %td{:height => "15"}
+
+                              %tr
+                                %td
+
+                                  %h4{:style => "{{ page.color-title }} font-size: 20px; margin: 0; padding: 0;" }
+                                    The Mezzell 7000
+                                  
+                                  The Mezzell 7000 is requires manual pressing and holds 24oz.
+
+                              %tr
+                                %td{:height => "15"}
+
+                              %tr
+                                %td
+                                  // Button
+                                  %table{ :align => "center", {{ page.table-base }}, :style => "color: #6c7e76; font-family: AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px;", :width => "100%" }
+                                    %tr
+                                      %td{:bgcolor => "#5f4955", :style => "border-bottom: 4px solid #55424c; border-left: 2px solid #55424c; border-right: 2px solid #55424c; border-radius: 3px;"}
+                                        %a.button--thin{:href => "#", :style => "color: #ffffff; display: block; font-size: 16px; font-weight: bold; line-height: 2; padding-top: 8px; text-align: center; text-decoration: none; text-shadow: 0 1px 0 #5f4955; text-transform: uppercase;"} Order Now
+ 
+            // Spacer                                  
+            %tr
+              %td{ :height => "30" }
+
+
+
+
+
+
+
+
+
+
+ 
